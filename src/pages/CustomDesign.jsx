@@ -17,18 +17,24 @@ const CustomDesign = () => {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                <a href="/upload-art">
               <div className="bg-purple-50 p-6 rounded-lg">
                 <h3 className="font-semibold text-purple-800 mb-2">Upload Your Art</h3>
                 <p className="text-purple-600">Upload your own designs and logos</p>
               </div>
+                </a>
+                <a href="/design-templates">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h3 className="font-semibold text-green-800 mb-2">Design Templates</h3>
                 <p className="text-green-600">Choose from hundreds of pre-made templates</p>
               </div>
+              </a>
+              <a href="/text-editor">
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h3 className="font-semibold text-blue-800 mb-2">Text Editor</h3>
                 <p className="text-blue-600">Add custom text with various fonts and styles</p>
               </div>
+              </a>
             </div>
           </div>
         </div>

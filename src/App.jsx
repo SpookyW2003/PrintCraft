@@ -18,6 +18,10 @@ import About from './pages/About.jsx';
 import FAQ from './pages/FAQ.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { CartProvider } from './context/CartContext.jsx';
+import UploadArt from './pages/uploadart.jsx';
+import DesignTemplates from './pages/designtemplates.jsx';
+import TextEditor from './pages/texteditor.jsx';
+
 
 function App() {
   return (
@@ -40,6 +44,11 @@ function App() {
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/about" element={<About />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/upload-art" element={<UploadArt />} />
+              <Route path="/design-templates" element={<DesignTemplates />} />
+              <Route path="/text-editor" element={<TextEditor />} />
+
+              
             </Routes>
             <Footer />
           </div>
