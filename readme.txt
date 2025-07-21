@@ -1,50 +1,34 @@
-# 🖨️ PrintCraft – Custom Print E-Commerce Platform
+🖨️ PrintCraft – Custom Print E-Commerce Platform
 
-**PrintCraft** is a modern e-commerce web app designed to let users browse, customize, and order printed products with ease. It features a sleek UI, custom design tools, and a modular backend.
+PrintCraft** is a modern e-commerce web app designed to let users browse, customize, and order printed products with ease. It features a sleek UI, custom design tools, and a modular backend.
 
----
+ 🚀 Tech Stack
 
-## 🚀 Tech Stack
+-Frontend: React.js + Vite
+-Styling: Tailwind CSS
+-Routing: React Router DOM
+-State Management: Context API
+-Backend: (Folder included, under development)
 
-- **Frontend:** React.js + Vite
-- **Styling:** Tailwind CSS
-- **Routing:** React Router DOM
-- **State Management:** Context API
-- **Backend:** (Folder included, under development)
+📁 Project Structure
 
----
-
-## 📁 Project Structure
-
-printcraft/
-├── backend/ # (Optional) Backend server files
+Printcraft/
+├── backend/  (Optional) Backend server files
 ├── node_modules/
-├── src/ # Frontend source code
-│ ├── components/ # Reusable components (Header, Footer, etc.)
-│ ├── context/ # Auth and Cart context
-│ ├── pages/ # Main page components (UploadArt, CustomDesign, etc.)
-│ └── App.jsx # Main App entry point
-├── index.html # Main HTML file
-├── package.json # Project dependencies
-├── tailwind.config.js # Tailwind configuration
-├── postcss.config.js # PostCSS setup
-├── vite.config.ts # Vite configuration
+├── src/  Frontend source code
+│ ├── components/  Reusable components (Header, Footer, etc.)
+│ ├── context/  Auth and Cart context
+│ ├── pages/  Main page components (UploadArt, CustomDesign, etc.)
+│ └── App.jsx  Main App entry point
+├── index.html  Main HTML file
+├── package.json Project dependencies
+├── tailwind.config.js Tailwind configuration
+├── postcss.config.js  PostCSS setup
+├── vite.config.ts  Vite configuration
 ├── .gitignore
 └── README.md # You're reading it 😉
 
-yaml
-Copy
-Edit
 
-
----
-
-## 📦 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/printcraft.git
-cd printcraft
 
 🧩 Key Features
 
@@ -62,19 +46,6 @@ cd printcraft
 
 🖥️ Fully Responsive UI
 
-
- Pages (Routes)
-/ – Home
-
-/custom-design – Design Studio Entry
-
-/upload-art – Upload Your Artwork
-
-/design-templates – Choose Templates
-
-/text-editor – Add Custom Text
-
-/cart, /login, /register, /profile, /orders, /admin, etc.
 
 🛠️ Development Notes
 
