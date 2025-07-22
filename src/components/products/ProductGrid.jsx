@@ -171,7 +171,14 @@ const ProductGrid = () => {
 
   if (loading) {
     return (
-      <section className="py-16 bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-50">
+      /*<section className="py-16 bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-50">*/
+      <section
+  className="py-16 text-white"
+  style={{
+    background: 'linear-gradient(to bottom right, rgba(24, 10, 93, 0.95), rgba(24, 10, 93, 0.85))',
+  }}
+>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Our Products</h2>
@@ -208,11 +215,17 @@ const ProductGrid = () => {
             <button
               key={category.id}
               onClick={() => setFilter(category.id)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
+              /*className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
                 filter === category.id
                   ? 'bg-teal-600 text-white shadow-lg transform scale-105'
                   : 'bg-white text-gray-700 hover:bg-teal-50 hover:text-teal-600'
-              }`}
+              }`}*/
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
+  filter === category.id
+    ? 'bg-indigo-900 text-white shadow-lg transform scale-105'
+    : 'bg-white text-gray-700 hover:bg-indigo-100 hover:text-indigo-900'
+}`}
+
             >
               {category.name}
             </button>
@@ -262,13 +275,14 @@ const ProductGrid = () => {
                     <span className="text-sm font-medium text-gray-700">{product.rating.average}</span>
                     <span className="text-sm text-gray-500">({product.rating.count})</span>
                   </div>
-                  <span className="text-2xl font-bold text-teal-600">${product.basePrice}</span>
+                  <span className="text-2xl font-bold text-teal-600">₹{product.basePrice}</span>
                 </div>
                 
                 <div className="flex items-center justify-center">
                   <Link
-                    to={`/products/${product.id}`}
-                    className="bg-teal-600 text-white px-6 py-3 rounded-md hover:bg-teal-700 transition-colors font-medium w-full text-center"
+                    to={`/products/${product.id}`}  
+                    className="text-white px-6 py-3 rounded-md transition-opacity font-medium w-full text-center hover:opacity-90"
+  style={{ backgroundColor: '#180A5D' }}
                   >
                     Customize Now
                   </Link>

@@ -61,7 +61,7 @@ const Admin = () => {
 const AdminDashboard = () => {
   const stats = [
     { name: 'Total Orders', value: '1,234', change: '+12.3%', color: 'text-green-600' },
-    { name: 'Revenue', value: '$45,678', change: '+8.2%', color: 'text-green-600' },
+    { name: 'Revenue', value: '₹45,678', change: '+8.2%', color: 'text-green-600' },
     { name: 'Active Users', value: '892', change: '+3.1%', color: 'text-green-600' },
     { name: 'Products', value: '156', change: '+2.4%', color: 'text-green-600' },
   ];

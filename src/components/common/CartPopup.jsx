@@ -50,7 +50,9 @@ const CartPopup = () => {
               <span>Qty: {lastAddedItem.quantity}</span>
             </div>
             <p className="text-sm font-semibold text-green-600">
-              ${(lastAddedItem.price * lastAddedItem.quantity).toFixed(2)}
+            
+
+              ₹{(lastAddedItem.price * lastAddedItem.quantity).toFixed(2)}
             </p>
           </div>
         </div>

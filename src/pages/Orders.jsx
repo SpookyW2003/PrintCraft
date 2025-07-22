@@ -104,7 +104,7 @@ const Orders = () => {
                     </div>
                     <div className="text-right">
                       <div className="text-sm text-gray-600">Qty: {item.quantity}</div>
-                      <div className="font-medium text-gray-900">${item.price}</div>
+                      <div className="font-medium text-gray-900">₹{item.price}</div>
                     </div>
                   </div>
                 ))}
@@ -116,7 +116,7 @@ const Orders = () => {
                 </button>
                 <div className="text-right">
                   <div className="text-sm text-gray-600">Total</div>
-                  <div className="text-lg font-bold text-gray-900">${order.total}</div>
+                  <div className="text-lg font-bold text-gray-900">₹{order.total}</div>
                 </div>
               </div>
             </div>

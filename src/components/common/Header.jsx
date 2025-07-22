@@ -33,7 +33,19 @@ const Header = () => {
   };
 
   return (
-    <header className={`bg-gradient-to-b from-teal-500 via-teal-600 to-teal-800 shadow-lg sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-0'}`}>
+   /* <header
+  style={{ background: 'linear-gradient(to bottom, #030303ff, #180A5D, #030303ff)' }}
+  className={`shadow-lg sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-0'}`}
+>*/
+<header
+  style={{
+    background: 'linear-gradient(to bottom right, rgba(24, 10, 93, 0.9), rgba(24, 10, 93, 0.9))',
+  }}
+  className={`shadow-lg sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-0'}`}
+>
+
+
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section - Logo and User Actions */}
         <div className="flex justify-between items-center py-4 border-b border-white/20">

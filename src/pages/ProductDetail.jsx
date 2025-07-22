@@ -26,24 +26,24 @@ const ProductDetail = () => {
         name: "Premium Cotton T-Shirt",
         description: "Soft, comfortable cotton tee perfect for custom designs. Made from 100% premium cotton with a classic fit that looks great on everyone.",
         category: "t-shirt",
-        basePrice: 19.99,
+        basePrice: 450,
         images: [
-          { url: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.jpg?s=612x612&w=0&k=20&c=Dk9vgHFqFrwXQNfnEq8_0WN6IjQ35UysBNaMgUh4IjA=", altText: "Front view" }
         ],
         colors: [
-          { name: "White", hex: "#FFFFFF", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop" },
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1583743814966-8936f37f4ec9?w=800&h=800&fit=crop" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=800&h=800&fit=crop" },
-          { name: "Red", hex: "#DC2626", image: "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?w=800&h=800&fit=crop" },
-          { name: "Gray", hex: "#6B7280", image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=800&fit=crop" }
+          { name: "White", hex: "#FFFFFF", image: "https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.jpg?s=612x612&w=0&k=20&c=Dk9vgHFqFrwXQNfnEq8_0WN6IjQ35UysBNaMgUh4IjA=" },
+          { name: "Black", hex: " #1E3A8A", image: "https://media.istockphoto.com/id/1394834366/photo/blue-mens-t-shirt.jpg?s=612x612&w=0&k=20&c=WmznutVb5PXQ0TFJgA8S88Al87twl3J8ulviKA26dQg=" },
+          { name: "Navy", hex: "#000000", image: "https://media.istockphoto.com/id/1830111752/photo/black-t-shirt-short-sleeve-mockup.jpg?s=612x612&w=0&k=20&c=fqMq-q2LjSt2uVUiD3VC46FaxmIDCJunEoRlJiNOswE=" },
+          { name: "Red", hex: "#DC2626", image: "https://media.istockphoto.com/id/1354031012/photo/red-t-shirt-mockup-men-as-design-template-tee-shirt-blank-isolated-on-white-front-view.jpg?s=612x612&w=0&k=20&c=_5QLLkUa0-ZzSK1rp6Ie-ZRBPOEku4as4ZMrZg-y2GI=" },
+          { name: "Gray", hex: "#6B7280", image: "https://media.istockphoto.com/id/1354020634/photo/gray-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.jpg?s=612x612&w=0&k=20&c=HwmYmBU8FCIojsNUYZ5kE_rX7qqQ_9CxcmtK3L-JsvU=" }
         ],
         sizes: [
-          { size: "XS", price: 19.99, stock: 5 },
-          { size: "S", price: 19.99, stock: 10 },
-          { size: "M", price: 19.99, stock: 15 },
-          { size: "L", price: 19.99, stock: 12 },
-          { size: "XL", price: 22.99, stock: 8 },
-          { size: "XXL", price: 24.99, stock: 3 }
+          { size: "XS", price: 400, stock: 5 },
+          { size: "S", price: 450, stock: 10 },
+          { size: "M", price: 450, stock: 15 },
+          { size: "L", price: 450, stock: 12 },
+          { size: "XL", price: 500, stock: 8 },
+          { size: "XXL", price: 500, stock: 3 }
         ],
         rating: { average: 4.8, count: 124 },
         features: [
@@ -306,12 +306,12 @@ const ProductDetail = () => {
         category: "accessories",
         basePrice: 14.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://media.istockphoto.com/id/1197598277/photo/eco-friendly-black-colour-fashion-canvas-tote-bag-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=SqXj6Ty5T6qdKXdrGqNRbrDL-uwK1ch2b4ywhQbfnks=", altText: "Front view" }
         ],
         colors: [
-          { name: "Natural", hex: "#F5F5DC", image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=800&fit=crop" },
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1582142306909-195724d33be4?w=800&h=800&fit=crop" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=800&fit=crop" }
+          { name: "Natural", hex: "#ffffff", image: "https://media.istockphoto.com/id/1197598277/photo/eco-friendly-black-colour-fashion-canvas-tote-bag-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=SqXj6Ty5T6qdKXdrGqNRbrDL-uwK1ch2b4ywhQbfnks=" },
+          { name: "Black", hex: "#000000", image: "https://media.istockphoto.com/id/1197598953/photo/eco-friendly-black-colour-fashion-canvas-tote-bag-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=3HMfU62MrBvLmE0u5DUZ3dt7rbSTO4a99yBE0kOUoLI=" },
+          { name: "Navy", hex: "#1E3A8A", image: "https://www.mossery.co/cdn/shop/products/totebag-flow-back_1500x.png?v=1619579136" }
         ],
         sizes: [
           { size: "One Size", price: 14.99, stock: 30 }
@@ -403,7 +403,7 @@ const ProductDetail = () => {
             </div>
 
             <div className="text-3xl font-bold text-purple-600">
-              ${selectedSize ? product.sizes.find(s => s.size === selectedSize)?.price : product.basePrice}
+              ₹{selectedSize ? product.sizes.find(s => s.size === selectedSize)?.price : product.basePrice}
             </div>
 
             <p className="text-gray-600 leading-relaxed">{product.description}</p>
