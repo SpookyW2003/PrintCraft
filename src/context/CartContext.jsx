@@ -1,6 +1,7 @@
+// src/context/CartContext.jsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-const CartContext = createContext();
+export const CartContext = createContext();
 
 export const useCart = () => {
   const context = useContext(CartContext);
@@ -11,6 +12,7 @@ export const useCart = () => {
 };
 
 export const CartProvider = ({ children }) => {
+  console.log("CartProvider is rendering...");
   const [cartItems, setCartItems] = useState([]);
   const [showCartPopup, setShowCartPopup] = useState(false);
   const [lastAddedItem, setLastAddedItem] = useState(null);
@@ -26,40 +28,48 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
+  // ✨ MODIFIED addToCart FUNCTION
   const addToCart = (item) => {
     setCartItems(prevItems => {
-      const existingItem = prevItems.find(
-        cartItem => 
-          cartItem.id === item.id && 
-          cartItem.size === item.size && 
-          cartItem.color === item.color
-      );
-
-      if (existingItem) {
-        return prevItems.map(cartItem =>
-          cartItem.id === item.id && 
-          cartItem.size === item.size && 
-          cartItem.color === item.color
-            ? { ...cartItem, quantity: cartItem.quantity + item.quantity }
-            : cartItem
+      // --- Handle Standard Products ---
+      // If the item is NOT custom, check if a similar item already exists.
+      if (!item.customization) {
+        const existingItem = prevItems.find(
+          cartItem => 
+            !cartItem.customization && // Make sure we only check against other standard items
+            cartItem.id === item.id && 
+            cartItem.size === item.size && 
+            cartItem.color === item.color
         );
+
+        // If it exists, just update the quantity
+        if (existingItem) {
+          return prevItems.map(cartItem =>
+            cartItem.cartId === existingItem.cartId
+              ? { ...cartItem, quantity: cartItem.quantity + item.quantity }
+              : cartItem
+          );
+        }
       }
 
-      return [...prevItems, { ...item, cartId: Date.now() }];
+      // --- Handle Custom Items & New Standard Items ---
+      // If the item IS custom OR it's a new standard item, add it to the cart.
+      // We use the ID from Artpage (cartItemId) or generate a new one.
+      return [...prevItems, { ...item, cartId: item.cartItemId || Date.now() }];
     });
 
-    // Show popup notification
+    // --- Popup logic (no changes needed) ---
     setLastAddedItem(item);
     setShowCartPopup(true);
-    
-    // Auto-hide popup after 3 seconds
     setTimeout(() => {
       setShowCartPopup(false);
     }, 3000);
   };
 
   const removeFromCart = (cartId) => {
-    setCartItems(prevItems => prevItems.filter(item => item.cartId !== cartId));
+    // In Artpage, we called it 'cartItemId'. Your code calls it 'cartId'.
+    // This handles both cases to be safe.
+    setCartItems(prevItems => prevItems.filter(item => (item.cartId !== cartId && item.cartItemId !== cartId) ));
   };
 
   const updateQuantity = (cartId, quantity) => {
@@ -67,10 +77,9 @@ export const CartProvider = ({ children }) => {
       removeFromCart(cartId);
       return;
     }
-
     setCartItems(prevItems =>
       prevItems.map(item =>
-        item.cartId === cartId ? { ...item, quantity } : item
+        (item.cartId === cartId || item.cartItemId === cartId) ? { ...item, quantity } : item
       )
     );
   };

@@ -65,9 +65,9 @@ const ProductDetail = () => {
           { url: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop", altText: "Front view" }
         ],
         colors: [
-          { name: "Gray", hex: "#6B7280", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop" },
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1583743814966-8936f37f4ec9?w=800&h=800&fit=crop" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop" }
+          { name: "Gray", hex: "#743008ff", image: "https://5.imimg.com/data5/SELLER/Default/2024/10/459451053/EZ/WJ/MX/65238933/unisex-hoddies-streetwear-hoodie-cozy-pullover-hoodie-cotton.jpg" },
+          { name: "Black", hex: "#ffffffff", image: "https://5.imimg.com/data5/SELLER/Default/2024/10/459449398/VT/XE/CQ/65238933/unisex-hoddies-streetwear-hoodie-cozy-pullover-hoodie-cotton.jpg" },
+          { name: "Navy", hex: "#000000ff", image: "https://image.hm.com/assets/hm/df/e9/dfe997b6480006654cfec10fe821b6071cbb90f3.jpg?imwidth=768" }
         ],
         sizes: [
           { size: "S", price: 39.99, stock: 8 },
@@ -96,9 +96,9 @@ const ProductDetail = () => {
           { url: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=800&fit=crop", altText: "Front view" }
         ],
         colors: [
-          { name: "White", hex: "#FFFFFF", image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=800&fit=crop" },
-          { name: "Gray", hex: "#6B7280", image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=800&fit=crop" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=800&fit=crop" }
+          { name: "White", hex: "#1f97c7ff", image: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTEyL3M4MC1wYWktMTc0Ny5qcGc.jpg" },
+          { name: "Gray", hex: "#e20e95ff", image: "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3M4MC1wYWktMTc0Ny1tb2NrdXAtMDEtam9iMTQyMS5wbmc.png" },
+          { name: "Navy", hex: "#1E3A8A", image: "https://m.media-amazon.com/images/I/41fWgIMy9XL._AC_UL240_SR240,220_.jpg" }
         ],
         sizes: [
           { size: "S", price: 16.99, stock: 15 },
