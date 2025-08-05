@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Star, Plus, Minus, ShoppingCart, Heart, Share2 } from 'lucide-react';
 import { useCart } from '../context/CartContext.jsx';
+import VirtualTryOnModal from '../components/VirtualTryOnModal.jsx';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -12,6 +13,7 @@ const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
   const [activeImage, setActiveImage] = useState(0);
   const [currentImage, setCurrentImage] = useState('');
+  const [showVirtualTryOn, setShowVirtualTryOn] = useState(false);
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -364,6 +366,14 @@ const ProductDetail = () => {
     alert('Added to cart!');
   };
 
+  const handleVirtualTryOn = () => {
+    if (!selectedSize || !selectedColor) {
+      alert('Please select size and color first to try on virtually!');
+      return;
+    }
+    setShowVirtualTryOn(true);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -481,6 +491,14 @@ const ProductDetail = () => {
               </div>
             </div>
 
+            {/* Virtual Try-On Button */}
+            <button
+              className="flex-1 bg-blue-600 text-white py-3 px-6 rounded-md font-medium hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+              onClick={() => handleVirtualTryOn()}
+            >
+              <span>Virtual Try-On</span>
+            </button>
+            
             {/* Action Buttons */}
             <div className="flex space-x-4">
               <button
@@ -519,6 +537,16 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
+
+      {/* Virtual Try-On Modal */}
+      {showVirtualTryOn && (
+        <VirtualTryOnModal
+          product={product}
+          selectedSize={selectedSize}
+          selectedColor={selectedColor}
+          onClose={() => setShowVirtualTryOn(false)}
+        />
+      )}
     </div>
   );
 };

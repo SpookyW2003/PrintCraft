@@ -11,6 +11,7 @@ import productRoutes from './routes/products.js';
 import orderRoutes from './routes/orders.js';
 import designRoutes from './routes/designs.js';
 import adminRoutes from './routes/admin.js';
+import tryOnRoutes from './routes/tryOn.js';
 
 // Load environment variables
 dotenv.config();
@@ -21,8 +22,10 @@ const PORT = process.env.PORT || 5000;
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-  credentials: true
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Rate limiting
@@ -50,6 +53,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/designs', designRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/try-on', tryOnRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

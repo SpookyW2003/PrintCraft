@@ -44,6 +44,58 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: ''
   },
+  bodyMeasurements: {
+    height: {
+      type: Number, // in cm
+      min: 100,
+      max: 250
+    },
+    weight: {
+      type: Number, // in kg
+      min: 30,
+      max: 200
+    },
+    chest: {
+      type: Number, // in cm
+      min: 60,
+      max: 150
+    },
+    waist: {
+      type: Number, // in cm
+      min: 50,
+      max: 150
+    },
+    hips: {
+      type: Number, // in cm
+      min: 60,
+      max: 150
+    },
+    shoulderWidth: {
+      type: Number, // in cm
+      min: 30,
+      max: 60
+    },
+    armLength: {
+      type: Number, // in cm
+      min: 50,
+      max: 90
+    },
+    bodyShape: {
+      type: String,
+      enum: ['rectangle', 'pear', 'apple', 'hourglass', 'inverted-triangle'],
+      default: 'rectangle'
+    },
+    gender: {
+      type: String,
+      enum: ['male', 'female', 'unisex'],
+      default: 'unisex'
+    },
+    preferredFit: {
+      type: String,
+      enum: ['tight', 'fitted', 'regular', 'loose', 'oversized'],
+      default: 'regular'
+    }
+  },
   orders: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Order'
