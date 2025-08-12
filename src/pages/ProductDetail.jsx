@@ -64,7 +64,7 @@ const ProductDetail = () => {
         category: "hoodie",
         basePrice: 39.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://5.imimg.com/data5/SELLER/Default/2024/10/459451053/EZ/WJ/MX/65238933/unisex-hoddies-streetwear-hoodie-cozy-pullover-hoodie-cotton.jpg", altText: "Front view" }
         ],
         colors: [
           { name: "Gray", hex: "#743008ff", image: "https://5.imimg.com/data5/SELLER/Default/2024/10/459451053/EZ/WJ/MX/65238933/unisex-hoddies-streetwear-hoodie-cozy-pullover-hoodie-cotton.jpg" },
@@ -95,12 +95,12 @@ const ProductDetail = () => {
         category: "tank-top",
         basePrice: 16.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://m.media-amazon.com/images/I/61BGZLfInbL._SY741_.jpg", altText: "Front view" }
         ],
         colors: [
-          { name: "White", hex: "#1f97c7ff", image: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTEyL3M4MC1wYWktMTc0Ny5qcGc.jpg" },
-          { name: "Gray", hex: "#e20e95ff", image: "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3M4MC1wYWktMTc0Ny1tb2NrdXAtMDEtam9iMTQyMS5wbmc.png" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://m.media-amazon.com/images/I/41fWgIMy9XL._AC_UL240_SR240,220_.jpg" }
+          { name: "White", hex: "#000000ff", image: "https://m.media-amazon.com/images/I/61BGZLfInbL._SY741_.jpg" },
+          { name: "Gray", hex: "#580a0aff", image: "https://m.media-amazon.com/images/I/61wT9tSF3XL._SY741_.jpg" },
+          { name: "Navy", hex: "#1E3A8A", image: "https://m.media-amazon.com/images/I/61tIlu+e3QL._SY741_.jpg" }
         ],
         sizes: [
           { size: "S", price: 16.99, stock: 15 },
@@ -125,13 +125,13 @@ const ProductDetail = () => {
         category: "polo",
         basePrice: 29.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://m.media-amazon.com/images/I/71IRYAuDSRL._SX679_.jpg", altText: "Front view" }
         ],
         colors: [
-          { name: "White", hex: "#FFFFFF", image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=800&h=800&fit=crop" },
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=800&fit=crop" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&h=800&fit=crop" },
-          { name: "Green", hex: "#059669", image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&h=800&fit=crop" }
+          { name: "Green", hex: "#8cdd13ff", image: "https://m.media-amazon.com/images/I/71IRYAuDSRL._SX679_.jpg" },
+          { name: "Blue", hex: "#28afe0ff", image: "https://m.media-amazon.com/images/I/619H76xqUUL._SX679_.jpg" },
+          { name: "Medium Yellow", hex: "#f0ae4bff", image: "https://m.media-amazon.com/images/I/71Pa-MMXq+L._SX679_.jpg" },
+          
         ],
         sizes: [
           { size: "S", price: 29.99, stock: 10 },
@@ -157,12 +157,12 @@ const ProductDetail = () => {
         category: "sweatshirt",
         basePrice: 34.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTGvGVQ5WBmhpf4ckpinl7bpEOVoldM5rQ5tq6qM8ynpzK9fMnTEYiJKt5Ci84UAsA0P6knPr0map8QgIY_IZXJ0skwB-ZUQLo4ph0CKGYZvLutO8Auqjj0Z4E", altText: "Front view" }
         ],
         colors: [
-          { name: "Gray", hex: "#6B7280", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop" },
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=800&h=800&fit=crop" },
-          { name: "Maroon", hex: "#991B1B", image: "https://images.unsplash.com/photo-1604695573706-53170668f6a6?w=800&h=800&fit=crop" }
+          { name: "Black", hex: "#000000ff", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTGvGVQ5WBmhpf4ckpinl7bpEOVoldM5rQ5tq6qM8ynpzK9fMnTEYiJKt5Ci84UAsA0P6knPr0map8QgIY_IZXJ0skwB-ZUQLo4ph0CKGYZvLutO8Auqjj0Z4E" },
+          { name: "Bl", hex: "#e9d0a1ff", image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcStpz38Uo1pXs9mPjVqj3Rg-lbLBbLkA-whVEQhrkr016VKU_hpXsTynTCs2D_7dsS3dK-MBAlp2IJW4cA2CoIHMhE_iJrZWy46t8jrqYD7Qtl9R5by4s8815M3" },
+          { name: "Maroon", hex: "#3ec2f7ff", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR90u_UdFNEiFCJHLgV87Cxwaw3c_weQddgFyKJiQ9FLNkecD5QzPZHi_en1YSsr-8Fyv85u2eRCQApVHEf2kAt-lW7ljNpdIhA8icaUB6qksx9TAIEY-V-Jqyt" }
         ],
         sizes: [
           { size: "S", price: 34.99, stock: 9 },
@@ -188,12 +188,12 @@ const ProductDetail = () => {
         category: "long-sleeve",
         basePrice: 24.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://i5.walmartimages.com/seo/Paragon-Long-Islander-Performance-Long-Sleeve-T-Shirt-Size-up-to-6XL_75100390-f975-4749-a1a1-dea87f175345.8203adf9393f9f2bb0aaf90e760b817c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF", altText: "Front view" }
         ],
         colors: [
-          { name: "White", hex: "#FFFFFF", image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=800&fit=crop" },
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=800&fit=crop" },
-          { name: "Gray", hex: "#6B7280", image: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=800&h=800&fit=crop" }
+          { name: "Blue", hex: "#44e7fcff", image: "https://i5.walmartimages.com/seo/Paragon-Long-Islander-Performance-Long-Sleeve-T-Shirt-Size-up-to-6XL_75100390-f975-4749-a1a1-dea87f175345.8203adf9393f9f2bb0aaf90e760b817c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" },
+          { name: "Black", hex: "#000000", image: "https://i5.walmartimages.com/seo/Paragon-Long-Islander-Performance-Long-Sleeve-T-Shirt-Black-6XL_74d7c75a-6159-41b0-a580-395a1ef23f3c.96b8dc4a43559eb8bbea22cc6465a069.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" },
+          { name: "Gray", hex: "#a1a7b4ff", image: "https://i5.walmartimages.com/seo/Paragon-Long-Islander-Performance-Long-Sleeve-T-Shirt-Size-up-to-6XL_39b65d4b-1993-4e7c-bde4-bc18c06c8712.e47c052b60dbd6ca7a1d67919f2bd140.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" }
         ],
         sizes: [
           { size: "S", price: 24.99, stock: 12 },
@@ -219,12 +219,12 @@ const ProductDetail = () => {
         category: "hoodie",
         basePrice: 44.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1620799139834-6b8f844fbe29?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://static.zara.net/assets/public/5149/01f4/82e345959351/4e42641349b9/00761428800-e1/00761428800-e1.jpg?ts=1742485059270&w=750", altText: "Front view" }
         ],
         colors: [
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1620799139834-6b8f844fbe29?w=800&h=800&fit=crop" },
-          { name: "Gray", hex: "#6B7280", image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&h=800&fit=crop" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop" }
+          { name: "Black", hex: "#000000", image: "https://static.zara.net/assets/public/5149/01f4/82e345959351/4e42641349b9/00761428800-e1/00761428800-e1.jpg?ts=1742485059270&w=750" },
+          { name: "Blue", hex: "#041639ff", image: "https://static.zara.net/assets/public/7b61/b064/2daa41dda63c/4b39f901afbf/00761428401-e1/00761428401-e1.jpg?ts=1742484988293&w=750" },
+          { name: "White", hex: "#ffffffff", image: "https://static.zara.net/assets/public/18c5/4f6c/f8734ca8ba79/fcd9a3fcd5ec/00761428251-e1/00761428251-e1.jpg?ts=1742485042027&w=750" }
         ],
         sizes: [
           { size: "S", price: 44.99, stock: 7 },
@@ -250,12 +250,12 @@ const ProductDetail = () => {
         category: "t-shirt",
         basePrice: 21.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://cdn.tc.promotron.com/web-images/db9a7e0f-0104-4aa3-a882-62b8e010e894", altText: "Front view" }
         ],
         colors: [
-          { name: "White", hex: "#FFFFFF", image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&h=800&fit=crop" },
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1583743814966-8936f37f4ec9?w=800&h=800&fit=crop" },
-          { name: "Gray", hex: "#6B7280", image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=800&fit=crop" }
+          { name: "Blue", hex: "#181196ff", image: "https://cdn.tc.promotron.com/web-images/db9a7e0f-0104-4aa3-a882-62b8e010e894" },
+          { name: "Black", hex: "#000000", image: "https://cdn.tc.promotron.com/web-images/c914f85a-ee3e-464d-94f9-656e4883db71" },
+          { name: "Gray", hex: "#6B7280", image: "https://cdn.tc.promotron.com/web-images/11d102bc-cfbd-495f-a12e-8a0bee4d4051" }
         ],
         sizes: [
           { size: "S", price: 21.99, stock: 14 },
@@ -281,12 +281,12 @@ const ProductDetail = () => {
         category: "accessories",
         basePrice: 18.99,
         images: [
-          { url: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&h=800&fit=crop", altText: "Front view" }
+          { url: "https://www.cockatooindia.com/cdn/shop/files/0_ac467a61-5385-41ad-871f-d394f69add57.jpg?v=1737374253&width=713", altText: "Front view" }
         ],
         colors: [
-          { name: "Black", hex: "#000000", image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&h=800&fit=crop" },
-          { name: "Navy", hex: "#1E3A8A", image: "https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?w=800&h=800&fit=crop" },
-          { name: "Red", hex: "#DC2626", image: "https://images.unsplash.com/photo-1575428652377-a51a4d5d8a1b?w=800&h=800&fit=crop" }
+          { name: "Navy", hex: "#051056ff", image: "https://www.cockatooindia.com/cdn/shop/files/0_ac467a61-5385-41ad-871f-d394f69add57.jpg?v=1737374253&width=713" },
+          { name: "Black", hex: "#000000ff", image: "https://www.cockatooindia.com/cdn/shop/files/0_a6091d28-fc95-45f2-ab34-0ba1e933d0e3.jpg?v=1737374254&width=713" },
+          { name: "White", hex: "#fffafaff", image: "https://www.cockatooindia.com/cdn/shop/files/0_567eda37-9f25-4eef-95c5-a68346b0ab9d.jpg?v=1737374255&width=713" }
         ],
         sizes: [
           { size: "One Size", price: 18.99, stock: 25 }
