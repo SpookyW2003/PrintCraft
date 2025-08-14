@@ -6,6 +6,13 @@ import { useCart } from '../context/CartContext.jsx';
 const Cart = () => {
   const { cartItems, removeFromCart, updateQuantity, getCartTotal } = useCart();
 
+  // Calculate totals consistently
+  const subtotal = getCartTotal();
+  const shippingCost = 100.00; // Define a single source for shipping
+  const taxRate = 0.08; // 8% tax
+  const taxAmount = subtotal * taxRate;
+  const total = subtotal + shippingCost + taxAmount;
+
   if (cartItems.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50 py-16">
@@ -93,21 +100,21 @@ const Cart = () => {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Subtotal</span>
-                  <span className="font-medium">₹{getCartTotal().toFixed(2)}</span>
+                  <span className="font-medium">₹{subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Shipping</span>
-                  <span className="font-medium">₹100.0</span>
+                  <span className="font-medium">₹{shippingCost.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Tax</span>
-                  <span className="font-medium">₹{(getCartTotal() * 0.70).toFixed(2)}</span>
+                  <span className="text-gray-600">Tax (8%)</span>
+                  <span className="font-medium">₹{taxAmount.toFixed(2)}</span>
                 </div>
-                <div className="border-t pt-3">
+                <div className="border-t pt-3 mt-3">
                   <div className="flex justify-between">
                     <span className="text-lg font-bold text-gray-900">Total</span>
                     <span className="text-lg font-bold text-purple-600">
-                      ₹{(getCartTotal() + 5.99 + (getCartTotal() * 0.08)).toFixed(2)}
+                      ₹{total.toFixed(2)}
                     </span>
                   </div>
                 </div>
