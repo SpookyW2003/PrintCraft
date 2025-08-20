@@ -4,6 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
+import http from 'http'; // ✅ For Socket.io
+import { Server } from 'socket.io'; // ✅ Socket.io
 
 // Import routes
 import authRoutes from './routes/auth.js';
@@ -17,7 +19,30 @@ import tryOnRoutes from './routes/tryOn.js';
 dotenv.config();
 
 const app = express();
+const server = http.createServer(app); // ✅ Replaces app.listen
 const PORT = process.env.PORT || 5000;
+
+// ✅ Setup Socket.io
+const io = new Server(server, {
+  cors: {
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'],
+    methods: ['GET', 'POST'],
+    credentials: true
+  }
+});
+
+// Socket.io events
+io.on("connection", (socket) => {
+  console.log("🟢 User connected:", socket.id);
+
+  socket.on("send_message", (data) => {
+    io.emit("receive_message", data);
+  });
+
+  socket.on("disconnect", () => {
+    console.log("🔴 User disconnected:", socket.id);
+  });
+});
 
 // Security middleware
 app.use(helmet());
@@ -74,7 +99,8 @@ app.use('*', (req, res) => {
   res.status(404).json({ message: 'API route not found' });
 });
 
-app.listen(PORT, () => {
+// ✅ Start server with Socket.io
+server.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
   console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
 });
