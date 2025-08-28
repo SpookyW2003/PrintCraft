@@ -4,8 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
-import http from 'http'; // ✅ For Socket.io
-import { Server } from 'socket.io'; // ✅ Socket.io
+import http from 'http';
+import { Server } from 'socket.io';
 
 // Import routes
 import authRoutes from './routes/auth.js';
@@ -19,7 +19,7 @@ import tryOnRoutes from './routes/tryOn.js';
 dotenv.config();
 
 const app = express();
-const server = http.createServer(app); // ✅ Replaces app.listen
+const server = http.createServer(app);
 const PORT = process.env.PORT || 5000;
 
 // ✅ Setup Socket.io
@@ -31,14 +31,40 @@ const io = new Server(server, {
   }
 });
 
-// Socket.io events
+// ✅ In-memory storage for messages (you can replace with MongoDB later)
+let chatMessages = [];
+
+// ✅ Socket.io events
 io.on("connection", (socket) => {
   console.log("🟢 User connected:", socket.id);
 
+  // Send existing messages to the newly connected user
+  socket.emit("chat_history", chatMessages);
+
+  // When user sends a message
   socket.on("send_message", (data) => {
-    io.emit("receive_message", data);
+    const message = {
+      id: Date.now(),
+      userId: socket.id,
+      text: data.text,
+      sender: data.sender || "User",
+      timestamp: new Date().toISOString(),
+    };
+
+    // Store the message
+    chatMessages.push(message);
+
+    // Broadcast to all clients
+    io.emit("receive_message", message);
   });
 
+  // Optional: Join room (e.g., user ↔ admin chat)
+  socket.on("join_room", (room) => {
+    socket.join(room);
+    console.log(`📌 ${socket.id} joined room: ${room}`);
+  });
+
+  // Handle disconnect
   socket.on("disconnect", () => {
     console.log("🔴 User disconnected:", socket.id);
   });
@@ -56,7 +82,7 @@ app.use(cors({
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100 // limit each IP to 100 requests per windowMs
+  max: 100
 });
 app.use('/api/', limiter);
 
@@ -65,12 +91,14 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/printcraft', {
+const MONGO_URI = (process.env.MONGO_URI || 'mongodb://localhost:27017/printcraft', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-})
-.then(() => console.log('✅ Connected to MongoDB'))
-.catch(err => console.error('❌ MongoDB connection error:', err));
+});
+
+mongoose.connect(MONGO_URI)
+  .then(() => console.log('✅ Connected to MongoDB'))
+  .catch((err) => console.error('❌ MongoDB connection error:', err));
 
 // Routes
 app.use('/api/auth', authRoutes);
@@ -88,7 +116,7 @@ app.get('/api/health', (req, res) => {
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ 
+  res.status(500).json({
     message: 'Something went wrong!',
     ...(process.env.NODE_ENV === 'development' && { error: err.message })
   });

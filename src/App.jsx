@@ -22,6 +22,8 @@ import UploadArt from './pages/uploadart.jsx';
 import DesignTemplates from './pages/designtemplates.jsx';
 import TextEditor from './pages/texteditor.jsx';
 import Artpage from './pages/Artpage.jsx';
+import ChatBox from './components/common/chatbox.jsx';   // ✅ Chatbox import
+
 
 // ✨ 1. Create a Layout component. This is the shell for your pages.
 const AppLayout = () => {
@@ -32,6 +34,10 @@ const AppLayout = () => {
       <main className="flex-grow">
         <Outlet /> {/* This is where your page components will be rendered */}
       </main>
+       {/* ✅ Chatbox added here so it appears on every page */}
+      <div className="fixed bottom-5 right-5 z-50">
+        <ChatBox />
+      </div>
       <Footer />
     </div>
   );
