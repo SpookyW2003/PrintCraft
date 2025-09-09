@@ -56,7 +56,7 @@ const ChatBox = () => {
             <div className="flex gap-2">
               <button
                 onClick={clearMessages}
-                className="bg-red-500 px-2 py-1 rounded text-sm hover:bg-red-600"
+                className="bg-redqA-500 px-2 py-1 rounded text-sm hover:bg-red-600"
               >
                 Clear
               </button>
